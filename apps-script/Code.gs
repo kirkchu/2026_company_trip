@@ -47,7 +47,7 @@ function getRegistrationSheet() {
   if (spreadsheetId) {
     spreadsheet = SpreadsheetApp.openById(spreadsheetId);
   } else {
-    spreadsheet = SpreadsheetApp.create(SPREADSHEET_NAME);
+    spreadsheet = SpreadsheetApp.getActiveSpreadsheet() || SpreadsheetApp.create(SPREADSHEET_NAME);
     properties.setProperty('SPREADSHEET_ID', spreadsheet.getId());
   }
 
