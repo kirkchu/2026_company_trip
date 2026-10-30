@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6c94a">
+    <meta name="description" content="2026 宇宙科技公司員工旅遊活動報名">
+    <title>2026 宇宙科技公司員工旅遊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="title-row">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> COMPANY DAY TRIP · 2026</p>
+        <h1>2026 宇宙科技公司<br class="mobile-break">員工旅遊</h1>
+        <p class="title-note">把日常切換成好風景，一起出發吧。</p>
+      </header>
+
+      <section class="image-row" aria-label="員工旅遊活動主視覺">
+        <img src="cover.jpg" alt="員工旅遊目的地風景" class="cover-image">
+        <span class="image-stamp" aria-hidden="true">OUT<br>OF<br>OFFICE</span>
+      </section>
+
+      <section class="details-row" aria-label="活動資訊與報名">
+        <div class="schedule-panel">
+          <div class="section-heading">
+            <p class="eyebrow">THE PLAN</p>
+            <h2>一起走走的<br>行程表</h2>
+          </div>
+          <ol class="schedule-list">
+            <li><time>8:00</time><span>報到</span></li>
+            <li><time>9:00</time><span>場次一</span></li>
+            <li class="break-item"><time>10:00</time><span>break time</span></li>
+            <li><time>10:30</time><span>場次二</span></li>
+            <li><time>11:30</time><span>Q&amp;A</span></li>
+            <li class="last-item"><time>12:00</time><span>活動結束</span></li>
+          </ol>
+          <p class="schedule-footnote">好好充電，再一起創造更多可能。</p>
+        </div>
+
+        <div class="form-panel">
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow">SAVE YOUR SPOT</p>
+              <h2>報名參加</h2>
+            </div>
+            <span class="form-mark" aria-hidden="true">✳</span>
+          </div>
+          <form id="registration-form">
+            <div class="field-grid">
+              <label class="field">
+                <span>姓名 <b aria-hidden="true">*</b></span>
+                <input name="name" autocomplete="name" placeholder="怎麼稱呼你？" required>
+              </label>
+              <label class="field">
+                <span>Email <b aria-hidden="true">*</b></span>
+                <input name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
+              </label>
+              <label class="field">
+                <span>單位</span>
+                <input name="department" autocomplete="organization-title" placeholder="例如：產品部">
+              </label>
+              <label class="field">
+                <span>電話 <b aria-hidden="true">*</b></span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="請輸入聯絡電話" required>
+              </label>
+              <label class="field field-wide">
+                <span>職稱</span>
+                <input name="jobTitle" autocomplete="organization-title" placeholder="例如：設計師">
+              </label>
+            </div>
+            <button type="submit" class="submit-button">
+              <span>送出報名</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="required-note"><b>*</b> 為必填欄位</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
