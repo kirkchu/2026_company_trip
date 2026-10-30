@@ -4,7 +4,7 @@
 
 ## 網站
 
-GitHub Pages 網址：部署完成後更新此處。
+GitHub Pages 網址：https://kirkchu.github.io/2026_-/
 
 ## Apps Script 部署
 
