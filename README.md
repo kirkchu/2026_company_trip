@@ -4,7 +4,7 @@
 
 ## 網站
 
-GitHub Pages 網址：https://kirkchu.github.io/2026_-/
+GitHub Pages 網址：https://kirkchu.github.io/2026_company_trip/
 
 ## Apps Script 部署
 
