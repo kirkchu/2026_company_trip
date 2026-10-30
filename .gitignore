@@ -2,3 +2,6 @@
 .clasp.json
 .clasprc.json
 node_modules/
+/spec/
+/docs/
+/apps-script/
