@@ -6,15 +6,13 @@
 
 GitHub Pages 網址：https://kirkchu.github.io/2026_company_trip/
 
-## Apps Script 部署
+## Google 試算表
 
-1. 在 Google 帳號登入 clasp：`clasp login`。
-2. 建立 Apps Script 專案：`clasp create --type webapp --title "2026_公司旅遊" --rootDir apps-script`。clasp 會自動建立 `.clasp.json`。
-3. 推送程式：`clasp push`。
-4. 部署網頁應用程式：`clasp deploy --description "員工旅遊報名"`。執行身分選擇自己，存取權設定為任何人。
-5. 將部署網址填入 `script.js` 的 `SCRIPT_URL`。
+試算表名稱為 `2026_公司旅遊`，工作表名稱為「報名資料」。Apps Script 已綁定此試算表，網頁應用程式以擁有者身分執行並允許所有人存取。
 
-第一次成功送出報名時，Apps Script 會建立 `2026_公司旅遊` 試算表及「報名資料」工作表，並將「電話」欄設定為純文字。
+要修改接收程式，請在試算表選擇「擴充功能 > Apps Script」，或在本機修改 `apps-script/Code.gs` 後執行 `clasp push`。部署新版本時，在 Apps Script 選擇「部署 > 管理部署作業 > 編輯」，建立新版本並更新部署。
+
+「電話」欄以純文字格式寫入，以保留前導零與國碼。
 
 ## 本機預覽
 
